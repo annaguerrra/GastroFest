@@ -74,9 +74,10 @@ Currently under development.
 
 Developed by:
 
-* Anna
-* Contributor 2
-* Contributor 3
+* Anna Guerra
+* André de Paula
+* Sofia Camillo
+* João Yutaka
 
 ## Academic Purpose
 
