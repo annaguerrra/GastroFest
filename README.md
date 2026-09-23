@@ -28,13 +28,35 @@ The project is being developed using only **HTML and CSS**, focusing on page str
 
 ```text
 /
+gastrofest/
+│
 ├── index.html
+│
 ├── pages/
+│   ├── festival.html
+│   ├── prato.html
+│   └── restaurante.html
+│
 ├── css/
-│   └── style.css
-├── assets/
-│   ├── images/
-│   └── icons/
+│   ├── reset.css
+│   ├── variables.css
+│   ├── base.css
+│   │
+│   ├── components/
+│   │   ├── header.css
+│   │   ├── gallery.css
+│   │   ├── cards.css
+│   │   ├── buttons.css
+│   │   ├── rating.css
+│   │   └── reviews.css
+│   │
+│   └── pages/
+│       ├── home.css
+│       ├── festival.css
+│       ├── prato.css
+│       └── restaurante.css
+│
+└── assets/
 └── README.md
 ```
 
