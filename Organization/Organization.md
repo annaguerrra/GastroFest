@@ -4,6 +4,8 @@ A ideia do site é reunir os festivais gastronômicos de Curitiba em um só luga
 
 O projeto vai ser feito somente com **HTML e CSS**.
 
+Modelagem: [Link Modelagem](https://canva.link/ma0m0j6dhy4nvle)
+
 A divisão vai ficar assim:
 
 **João — Home + Explorar Festivais**
