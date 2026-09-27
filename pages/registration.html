@@ -1,0 +1,240 @@
+﻿<!DOCTYPE html>
+<html lang="pt-BR">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Cadastro | GastroFest</title>
+        <link rel="stylesheet" href="../css/variables.css">
+        <link rel="stylesheet" href="../css/global.css">
+        <link rel="stylesheet" href="../css/pages/registration.css">
+    </head>
+    <body>
+        <!-- Trocar pelo header padrão -->
+        <header class="site-header">
+            <div class="container">
+                <span class="site-name">GastroFest</span>
+                <span>Gastronomia em Curitiba</span>
+            </div>
+        </header>
+
+        <main class="container registration-page">
+            <header class="registration-header">
+                <h1>Faça parte do GastroFest</h1>
+                <p>Cadastre um festival, um restaurante ou um prato.</p>
+            </header>
+
+            <nav class="registration-menu" aria-label="Tipos de cadastro">
+                <a href="#festival">Festival</a>
+                <a href="#restaurante">Restaurante</a>
+                <a href="#prato">Prato</a>
+            </nav>
+
+            <p class="form-note">Os campos com * são obrigatórios.</p>
+            <p class="form-note" id="submission-note">O envio dos cadastros estará disponível em breve.</p>
+
+            <section class="registration-section" id="festival">
+                <h2>Cadastrar festival</h2>
+                <form>
+                    <div class="form-grid">
+                        <div class="form-field full">
+                            <label for="festival-name">Nome do festival *</label>
+                            <input id="festival-name" name="festival-name" type="text" placeholder="Ex.: Nome do Festival" required>
+                        </div>
+
+                        <div class="form-field">
+                            <label for="festival-start">Data de início *</label>
+                            <input id="festival-start" name="festival-start" type="date" required>
+                        </div>
+
+                        <div class="form-field">
+                            <label for="festival-end">Data de término *</label>
+                            <input id="festival-end" name="festival-end" type="date" required>
+                        </div>
+
+                        <div class="form-field">
+                            <label for="festival-location">Local *</label>
+                            <input id="festival-location" name="festival-location" type="text" placeholder="Local do festival" required>
+                        </div>
+
+                        <div class="form-field">
+                            <label for="festival-neighborhood">Bairro</label>
+                            <input id="festival-neighborhood" name="festival-neighborhood" type="text" placeholder="Bairro">
+                        </div>
+
+                        <div class="form-field full">
+                            <label for="festival-description">Sobre o festival *</label>
+                            <textarea id="festival-description" name="festival-description" placeholder="Descreva o festival, sua proposta e principais informações." required></textarea>
+                        </div>
+
+                        <div class="form-field full">
+                            <label for="festival-image">Imagem principal *</label>
+                            <input id="festival-image" name="festival-image" type="file" accept="image/*" required>
+                            <p>Use uma imagem horizontal de boa qualidade para a página do festival.</p>
+                        </div>
+
+                        <div class="form-field">
+                            <label for="festival-instagram">Instagram</label>
+                            <input id="festival-instagram" name="festival-instagram" type="text" placeholder="@perfil">
+                        </div>
+
+                        <div class="form-field">
+                            <label for="festival-site">Site</label>
+                            <input id="festival-site" name="festival-site" type="url" placeholder="https://">
+                        </div>
+                    </div>
+
+                    <button type="submit" disabled aria-describedby="submission-note">Enviar cadastro do festival</button>
+                </form>
+            </section>
+
+            <section class="registration-section" id="restaurante">
+                <h2>Cadastrar restaurante</h2>
+                <form>
+                    <div class="form-grid">
+                        <div class="form-field full">
+                            <label for="restaurant-name">Nome do restaurante *</label>
+                            <input id="restaurant-name" name="restaurant-name" type="text" placeholder="Nome do estabelecimento" required>
+                        </div>
+
+                        <div class="form-field">
+                            <label for="restaurant-festival">Festival participante *</label>
+                            <select id="restaurant-festival" name="restaurant-festival" required>
+                                <option value="" selected disabled>Selecione um festival</option>
+                                <option value="festival-1">Festival 1 (exemplo)</option>
+                                <option value="festival-2">Festival 2 (exemplo)</option>
+                            </select>
+                        </div>
+
+                        <div class="form-field">
+                            <label for="restaurant-price">Faixa de preço *</label>
+                            <select id="restaurant-price" name="restaurant-price" required>
+                                <option value="" selected disabled>Selecione</option>
+                                <option value="$">$</option>
+                                <option value="$$">$$</option>
+                                <option value="$$$">$$$</option>
+                                <option value="$$$$">$$$$</option>
+                            </select>
+                        </div>
+
+                        <div class="form-field">
+                            <label for="restaurant-category">Categoria *</label>
+                            <select id="restaurant-category" name="restaurant-category" required>
+                                <option value="" selected disabled>Selecione uma categoria</option>
+                                <option>Brasileira</option>
+                                <option>Italiana</option>
+                                <option>Japonesa</option>
+                                <option>Mexicana</option>
+                                <option>Hamburgueria</option>
+                                <option>Cafeteria</option>
+                                <option>Vegetariana</option>
+                                <option>Outros</option>
+                            </select>
+                        </div>
+
+                        <div class="form-field">
+                            <label for="restaurant-phone">Telefone / WhatsApp</label>
+                            <input id="restaurant-phone" name="restaurant-phone" type="tel" placeholder="(41) 99999-9999">
+                        </div>
+
+                        <div class="form-field full">
+                            <label for="restaurant-address">Endereço *</label>
+                            <input id="restaurant-address" name="restaurant-address" type="text" placeholder="Rua, número e complemento" required>
+                        </div>
+
+                        <div class="form-field">
+                            <label for="restaurant-neighborhood">Bairro *</label>
+                            <input id="restaurant-neighborhood" name="restaurant-neighborhood" type="text" placeholder="Bairro" required>
+                        </div>
+
+                        <div class="form-field">
+                            <label for="restaurant-instagram">Instagram</label>
+                            <input id="restaurant-instagram" name="restaurant-instagram" type="text" placeholder="@perfil">
+                        </div>
+
+                        <div class="form-field full">
+                            <label for="restaurant-description">Informações do restaurante *</label>
+                            <textarea id="restaurant-description" name="restaurant-description" placeholder="Conte um pouco sobre o restaurante." required></textarea>
+                        </div>
+
+                        <div class="form-field full">
+                            <label for="restaurant-image">Imagem principal *</label>
+                            <input id="restaurant-image" name="restaurant-image" type="file" accept="image/*" required>
+                        </div>
+                    </div>
+
+                    <button type="submit" disabled aria-describedby="submission-note">Enviar cadastro do restaurante</button>
+                </form>
+            </section>
+
+            <section class="registration-section" id="prato">
+                <h2>Cadastrar prato</h2>
+                <form>
+                    <div class="form-grid">
+                        <div class="form-field full">
+                            <label for="dish-name">Nome do prato *</label>
+                            <input id="dish-name" name="dish-name" type="text" placeholder="Nome do prato" required>
+                        </div>
+
+                        <div class="form-field">
+                            <label for="dish-restaurant">Restaurante *</label>
+                            <select id="dish-restaurant" name="dish-restaurant" required>
+                                <option value="" selected disabled>Selecione um restaurante</option>
+                                <option value="restaurant-1">Restaurante 1 (exemplo)</option>
+                                <option value="restaurant-2">Restaurante 2 (exemplo)</option>
+                            </select>
+                        </div>
+
+                        <div class="form-field">
+                            <label for="dish-price">Preço *</label>
+                            <input id="dish-price" name="dish-price" type="number" min="0" step="0.01" placeholder="0,00" required>
+                        </div>
+
+                        <div class="form-field">
+                            <label for="dish-category">Categoria *</label>
+                            <select id="dish-category" name="dish-category" required>
+                                <option value="" selected disabled>Selecione</option>
+                                <option>Entrada</option>
+                                <option>Prato principal</option>
+                                <option>Sobremesa</option>
+                                <option>Bebida</option>
+                                <option>Outro</option>
+                            </select>
+                        </div>
+
+                        <div class="form-field">
+                            <label for="dish-serves">Serve quantas pessoas?</label>
+                            <input id="dish-serves" name="dish-serves" type="number" min="1" placeholder="Ex.: 1">
+                        </div>
+
+                        <div class="form-field full">
+                            <label for="dish-description">Informações do prato *</label>
+                            <textarea id="dish-description" name="dish-description" placeholder="Descreva o prato, ingredientes principais e apresentação." required></textarea>
+                        </div>
+
+                        <fieldset class="form-field full">
+                            <legend>Opções alimentares</legend>
+                            <div class="checkbox-group">
+                                <label><input type="checkbox" name="diet" value="vegetariano"> Vegetariano</label>
+                                <label><input type="checkbox" name="diet" value="vegano"> Vegano</label>
+                                <label><input type="checkbox" name="diet" value="sem-gluten"> Sem glúten</label>
+                                <label><input type="checkbox" name="diet" value="sem-lactose"> Sem lactose</label>
+                            </div>
+                        </fieldset>
+
+                        <div class="form-field full">
+                            <label for="dish-image">Foto do prato *</label>
+                            <input id="dish-image" name="dish-image" type="file" accept="image/*" required>
+                            <p>Escolha uma imagem clara e bem enquadrada do prato.</p>
+                        </div>
+                    </div>
+
+                    <button type="submit" disabled aria-describedby="submission-note">Enviar cadastro do prato</button>
+                </form>
+            </section>
+        </main>
+
+        <!-- Trocar pelo footer padrão -->
+        <footer class="site-footer">GastroFest · Curitiba</footer>
+    </body>
+</html>
+

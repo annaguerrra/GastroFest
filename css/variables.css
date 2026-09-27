@@ -1,0 +1,21 @@
+:root {
+  --color-primary: #3F5A45;
+  --color-primary-dark: #304638;
+  --color-terracotta: #C86B4A;
+  --color-terracotta-dark: #A95338;
+  --color-accent: #E0A83B;
+  --color-background: #F7F2E8;
+  --color-surface: #FFFDF8;
+  --color-text: #262626;
+  --color-text-secondary: #6E6A63;
+  --color-border: #DED7CA;
+
+  --font-heading: "Playfair Display", Georgia, serif;
+  --font-body: "Inter", Arial, sans-serif;
+
+  --radius-sm: 8px;
+  --radius-md: 14px;
+  --shadow-card: 0 8px 18px rgba(38, 38, 38, 0.12);
+
+  --container: 1120px;
+}
