@@ -54,12 +54,6 @@
     background-color: var(--color-surface);
 }
 
-.form-note {
-    margin: 0 0 16px;
-    color: var(--color-text-secondary);
-    font-size: 14px;
-}
-
 .registration-section h2 {
     margin: 0 0 24px;
     font-family: var(--font-heading);
@@ -163,11 +157,6 @@
     outline-offset: 2px;
 }
 
-.form-field p {
-    color: var(--color-text-secondary);
-    font-size: 13px;
-}
-
 .registration-section button {
     margin-top: 24px;
     padding: 12px 24px;
@@ -179,12 +168,8 @@
     cursor: pointer;
 }
 
-.registration-section button:hover:not(:disabled) {
+.registration-section button:hover {
     background-color: var(--color-primary-dark);
-}
-
-.registration-section button:disabled {
-    cursor: not-allowed;
 }
 
 .site-footer {
