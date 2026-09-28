@@ -7,7 +7,9 @@
     <link rel="stylesheet" href="../css/components/header/header.css"> 
     <link rel="stylesheet" href="../css/components/footer/footer.css">
     <link rel="stylesheet" href="../css/pages/restaurante.css">
-    <link rel="stylesheet" href="../../variables.css"> 
+    <link rel="stylesheet" href="../css/variables.css"> 
+    <link rel="stylesheet" href="../css/components/media-gallery/media-gallery.css">
+    <link rel="stylesheet" href="../css/components/rating/rating.css">
 </head>
 <body>
 
@@ -15,7 +17,7 @@
         <div>
 
             <div class="logo-h">
-                <img src="../../../assets/logo.jpeg" alt="logo">
+                <img src="../assets/logo.jpeg" alt="logo">
             </div>
 
         </div>
@@ -27,18 +29,149 @@
             </div>
 
             <div class="perfil-h">
-                <img src="../../../assets/icone.png" alt="icone">
+                <img src="../assets/icone.png" alt="icone">
             </div>
 
         </div>
     </div>
         
+    <div class="body">
+
+       <div class="primeira-parte">
+            <div class="esquerda-b">
+
+                <div class="media-gallery">
+
+                    <input type="radio" name="galeria" id="foto1" class="opcao1" checked>
+                    <input type="radio" name="galeria" id="foto2" class="opcao2">
+                    <input type="radio" name="galeria" id="foto3" class="opcao3">
+                
+                    <!-- imagens de exemplo -->
+                    <div class="foto-principal">
+                        <img class="imagem1" src="../assets/restaurante.jpg" alt="Restaurante">
+                        <img class="imagem2" src="../assets/restaurante.jpg" alt="Restaurante">
+                        <img class="imagem3" src="../assets/restaurante.jpg" alt="Restaurante">
+                    </div>
+
+                    <!-- mini quadradinhos que ficam na lateral com previe das outras fotos -->
+                    <div class="miniaturas">
+                        <label for="foto1">
+                            <img src="../assets/foto-prato-restaurante.jpeg" alt="Ver foto da prato">
+                        </label>
+                        <label for="foto2">
+                            <img src="../assets/prato-bullprime.jpg" alt="Ver foto da prato">
+                        </label>
+                        <label for="foto3">
+                            <img src="../assets/images.jpg" alt="Ver foto do prato">
+                        </label>
+
+                    </div>
+
+                </div>
+            </div>
+            
+            <div class="direita-b">
+
+                <h1>Bull Prime</h1>
+                <div class="review-stars1">
+                        <span class="star filled">★</span>
+                        <span class="star filled">★</span>
+                        <span class="star filled">★</span>
+                        <span class="star">☆</span>
+                        <span class="star">☆</span>
+                </div>
+                <div class="inf-b">
+                    <p>A Bull Prime chegou a Curitiba para revolucionar o mercado de carnes nobres. A empresa oferece carnes bovinas premium, como angus, wagyu, DryAged e outras raças britânicas, e principalmente o cordeiro do Canan, que é a especialidade da casa.</p>
+                    <button class="btn-comentario">👤 Escreva um Comentário</button>
+                </div>
+            </div>
+       </div>
+       <div class="reviews">
+        <!-- Reviewer 01 -->
+            <article class="review-card">
+                <div class="review-header">
+                    <img class="review-user-icon" src="../assets/icone.png" alt="profile user photo">
+
+                    <div class="review-stars">
+                        <span class="star filled">★</span>
+                        <span class="star filled">★</span>
+                        <span class="star filled">★</span>
+                        <span class="star">☆</span>
+                        <span class="star">☆</span>
+                    </div>
+                </div>
+
+                <div class="review-content">
+                    <h3>Avaliação</h3>
+                    <p>
+                        Lorem ipsum dolor sit amet, consectetur
+                        adipiscing elit, sed do eiusmod tempor
+                        incididunt ut labore et dolore magna aliqua.
+                        Ut enim ad mini
+                    </p>
+                </div>
+            </article>
+
+            <!-- Reviewer 02 -->
+            <article class="review-card">
+                <div class="review-header">
+                    <img class="review-user-icon" src="../assets/icone.png" alt="profile user photo">
+
+                    <div class="review-stars">
+                        <span class="star filled">★</span>
+                        <span class="star filled">★</span>
+                        <span class="star filled">★</span>
+                        <span class="star">☆</span>
+                        <span class="star">☆</span>
+                    </div>
+                </div>
+
+                <div class="review-content">
+                    <h3>Avaliação</h3>
+                    <p>
+                        Lorem ipsum dolor sit amet, consectetur
+                        adipiscing elit, sed do eiusmod tempor
+                        incididunt ut labore et dolore magna aliqua.
+                        Ut enim ad mini
+                    </p>
+                </div>
+            </article>
+
+            <!-- Reviewer 03 -->
+            <article class="review-card">
+                <div class="review-header">
+                    <img class="review-user-icon" src="../assets/icone.png" alt="profile user photo">
+
+                    <div class="review-stars">
+                        <span class="star filled">★</span>
+                        <span class="star filled">★</span>
+                        <span class="star filled">★</span>
+                        <span class="star">☆</span>
+                        <span class="star">☆</span>
+                    </div>
+                </div>
+
+                <div class="review-content">
+                    <h3>Avaliação</h3>
+                    <p>
+                        Lorem ipsum dolor sit amet, consectetur
+                        adipiscing elit, sed do eiusmod tempor
+                        incididunt ut labore et dolore magna aliqua.
+                        Ut enim ad mini
+                    </p>
+                </div>
+            </article>
+    </div>
+
+    
+      
+
     <footer class="footer">
 
         <div class="esquerda-f">
 
             <div class="logo-f">
-                <img src="../../../assets/logo branca.jpeg" alt="logo">
+                <img src="../assets/logo branca.jpeg" alt="logo">
             </div>
                
             <div class="texto1-f">
