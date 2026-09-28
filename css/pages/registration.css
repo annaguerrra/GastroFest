@@ -1,4 +1,4 @@
-﻿.site-header {
+.site-header {
     border-bottom: 1px solid var(--color-border);
     background-color: var(--color-surface);
 }
@@ -12,6 +12,7 @@
 }
 
 .site-name {
+    text-decoration: none;
     color: var(--color-primary);
     font-family: var(--font-heading);
     font-size: 26px;

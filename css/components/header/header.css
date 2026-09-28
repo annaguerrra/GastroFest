@@ -2,13 +2,15 @@
     display: flex;
     background-color: var(--color-terracotta);
     align-items: center;
-    gap: 840px;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    gap: 20px;
     padding: 20px 18px 18px 20px;
-    height: 70px;
+    min-height: 70px;
 }
 
 .logo-h img {
-    width: 178;
+    width: auto;
     height: 90px;
     margin: 0 0 0 10px;
 }
@@ -21,11 +23,49 @@
 }
 
 .perfil-h img {
-    margin-top: 2%;
-    margin-left: 18%;
+    display: block;
     width: 45px;
     height: 45px;
 }
 .direita-h {
     display: flex;
+    align-items: center;
+    gap: 16px;
+}
+/* Menu usado em todas as páginas. */
+.menu {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 12px;
+    padding: 16px;
+    background-color: var(--color-surface);
+    border-bottom: 1px solid var(--color-border);
+    font-family: var(--font-body);
+}
+
+.menu a {
+    padding: 8px 12px;
+    color: var(--color-primary);
+    text-decoration: none;
+    border-radius: 4px;
+}
+
+.menu a:hover,
+.menu a[aria-current="page"] {
+    background-color: var(--color-primary);
+    color: white;
+}
+
+.menu a:focus-visible,
+.header a:focus-visible {
+    outline: 2px solid var(--color-primary-dark);
+    outline-offset: 3px;
+}
+
+.back-link {
+    display: inline-block;
+    margin: 24px;
+    color: var(--color-primary);
+    font-family: var(--font-body);
 }

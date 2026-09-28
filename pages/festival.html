@@ -3,7 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Festival | GastroFest</title>
+    <title>Festivais | GastroFest</title>
     <link rel="stylesheet" href="../css/components/header/header.css">
     <link rel="stylesheet" href="../css/components/footer/footer.css">
     <link rel="stylesheet" href="../css/pages/festival.css">
@@ -20,24 +20,30 @@
 <body>
 
     <header class="header">
-        <div>
-            <div class="logo-h">
-                <img src="../assets/logo.jpeg" alt="logo">
-            </div>
-        </div>
+        <a class="logo-h" href="principal.html" aria-label="GastroFest — página inicial">
+            <img src="../assets/logo.jpeg" alt="GastroFest">
+        </a>
 
         <div class="direita-h">
             <div class="texto-h">
                 <h1>Seja Bem-vindo, Usuário</h1>
             </div>
-
-            <div class="perfil-h">
-                <img src="../assets/icone.png" alt="icone">
-            </div>
+            <a class="perfil-h" href="registration.html" aria-label="Abrir cadastro">
+                <img src="../assets/icone.png" alt="">
+            </a>
         </div>
     </header>
 
-    <meio class="meio">
+    <nav class="menu" aria-label="Navegação principal">
+        <a href="principal.html">Início</a>
+        <a href="festival.html" aria-current="page">Festivais</a>
+        <a href="restaurante.html">Restaurantes</a>
+        <a href="pratos.html">Pratos</a>
+        <a href="registration.html">Cadastro</a>
+    </nav>
+
+    <main class="meio">
+        <a class="back-link" href="principal.html#festivais">← Voltar aos festivais</a>
         <div class="fest-cima">
             <div>
                 <img src="../assets/festival 2.jpg" alt="foto festival" class="img-fest">
@@ -51,7 +57,7 @@
 
         <div class="fest-baixo">
             <h1>Conheça os Restaurantes Participantes</h1>
-            <div class="bloco">
+            <a class="bloco" href="restaurante.html">
                 <img src="../assets/festival 3.jpg" alt="Restaurante">
                 <div class="texto">
                     <h1>Restaurante</h1>
@@ -59,9 +65,9 @@
                     <div class="estrelas">★★★★★</div>
                     <p>Endereço</p>
                 </div>
-            </div>
+            </a>
 
-            <div class="bloco">
+            <a class="bloco" href="restaurante.html">
                 <img src="../assets/festival 1.jpg" alt="Restaurante">
                 <div class="texto">
                     <h1>Restaurante</h1>
@@ -69,9 +75,9 @@
                     <div class="estrelas">★★★☆☆</div>
                     <p>Endereço</p>
                  </div>
-            </div>
+            </a>
 
-            <div class="bloco">
+            <a class="bloco" href="restaurante.html">
                 <img src="../assets/festival 3.jpg" alt="Restaurante">
                 <div class="texto">
                     <h1>Restaurante</h1>
@@ -79,9 +85,9 @@
                     <div class="estrelas">★★★★★</div>
                     <p>Endereço</p>
                 </div>
-            </div>
+            </a>
 
-            <div class="bloco">
+            <a class="bloco" href="restaurante.html">
                 <img src="../assets/festival 1.jpg" alt="Restaurante">
                 <div class="texto">
                     <h1>Restaurante</h1>
@@ -89,16 +95,16 @@
                     <div class="estrelas">★★★☆☆</div>
                     <p>Endereço</p>
                  </div>
-            </div>
+            </a>
         </div>
-    </meio>
+    </main>
 
     <footer class="footer">
 
         <div class="esquerda-f">
-            <div class="logo-f">
+            <a class="logo-f" href="principal.html" aria-label="Voltar ao início">
                 <img src="../assets/logo branca.jpeg" alt="logo">
-            </div>
+            </a>
 
             <div class="texto1-f">
                 <p>© 2026 Curitiba Festivais Gastronômicos</p>
