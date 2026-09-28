@@ -1,35 +1,34 @@
 <!DOCTYPE html>
-<html lang="pt-br">
+<html lang="pt-BR">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title></title>
-    <link rel="stylesheet" href="header.css"> 
-    <link rel="stylesheet" href="../../variables.css"> 
+    <title>Cabeçalho | GastroFest</title>
+    <link rel="stylesheet" href="../../variables.css">
+    <link rel="stylesheet" href="header.css">
 </head>
 <body>
-
-    <div class="header">
-        <div>
-
-            <div class="logo-h">
-                <img src="../../../assets/logo.jpeg" alt="logo">
-            </div>
-
-        </div>
+    <header class="header">
+        <a class="logo-h" href="../../../pages/principal.html" aria-label="GastroFest — página inicial">
+            <img src="../../../assets/logo.jpeg" alt="GastroFest">
+        </a>
 
         <div class="direita-h">
-
             <div class="texto-h">
                 <h1>Seja Bem-vindo, Usuário</h1>
             </div>
-
-            <div class="perfil-h">
-                <img src="../../../assets/icone.png" alt="icone">
-            </div>
-
+            <a class="perfil-h" href="../../../pages/registration.html" aria-label="Abrir cadastro">
+                <img src="../../../assets/icone.png" alt="">
+            </a>
         </div>
-    </div>
+    </header>
 
+    <nav class="menu" aria-label="Navegação principal">
+        <a href="../../../pages/principal.html">Início</a>
+        <a href="../../../pages/festival.html">Festivais</a>
+        <a href="../../../pages/restaurante.html">Restaurantes</a>
+        <a href="../../../pages/pratos.html">Pratos</a>
+        <a href="../../../pages/registration.html">Cadastro</a>
+    </nav>
 </body>
 </html>

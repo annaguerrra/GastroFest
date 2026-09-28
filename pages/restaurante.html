@@ -3,39 +3,42 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Festival | GastroFest</title>
+    <title>Restaurantes | GastroFest</title>
     <link rel="stylesheet" href="../css/components/header/header.css"> 
     <link rel="stylesheet" href="../css/components/footer/footer.css">
     <link rel="stylesheet" href="../css/pages/restaurante.css">
     <link rel="stylesheet" href="../css/variables.css"> 
     <link rel="stylesheet" href="../css/components/media-gallery/media-gallery.css">
     <link rel="stylesheet" href="../css/components/rating/rating.css">
+    <link rel="stylesheet" href="../css/components/btn/btn.css">
 </head>
 <body>
 
-    <div class="header">
-        <div>
-
-            <div class="logo-h">
-                <img src="../assets/logo.jpeg" alt="logo">
-            </div>
-
-        </div>
+    <header class="header">
+        <a class="logo-h" href="principal.html" aria-label="GastroFest — página inicial">
+            <img src="../assets/logo.jpeg" alt="GastroFest">
+        </a>
 
         <div class="direita-h">
-
             <div class="texto-h">
                 <h1>Seja Bem-vindo, Usuário</h1>
             </div>
-
-            <div class="perfil-h">
-                <img src="../assets/icone.png" alt="icone">
-            </div>
-
+            <a class="perfil-h" href="registration.html" aria-label="Abrir cadastro">
+                <img src="../assets/icone.png" alt="">
+            </a>
         </div>
-    </div>
-        
-    <div class="body">
+    </header>
+
+    <nav class="menu" aria-label="Navegação principal">
+        <a href="principal.html">Início</a>
+        <a href="festival.html">Festivais</a>
+        <a href="restaurante.html" aria-current="page">Restaurantes</a>
+        <a href="pratos.html">Pratos</a>
+        <a href="registration.html">Cadastro</a>
+    </nav>
+
+    <main class="body">
+        <a class="back-link" href="festival.html">← Voltar ao festival</a>
 
        <div class="primeira-parte">
             <div class="esquerda-b">
@@ -82,6 +85,7 @@
                 </div>
                 <div class="inf-b">
                     <p>A Bull Prime chegou a Curitiba para revolucionar o mercado de carnes nobres. A empresa oferece carnes bovinas premium, como angus, wagyu, DryAged e outras raças britânicas, e principalmente o cordeiro do Canan, que é a especialidade da casa.</p>
+                    <p><a class="btn" href="pratos.html">Ver prato</a></p>
                     <button class="btn-comentario">👤 Escreva um Comentário</button>
                 </div>
             </div>
@@ -166,13 +170,15 @@
     
       
 
+    </main>
+
     <footer class="footer">
 
         <div class="esquerda-f">
 
-            <div class="logo-f">
+            <a class="logo-f" href="principal.html" aria-label="Voltar ao início">
                 <img src="../assets/logo branca.jpeg" alt="logo">
-            </div>
+            </a>
                
             <div class="texto1-f">
                 <p>© 2026 Curitiba Festivais Gastronômicos</p>
