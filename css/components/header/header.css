@@ -7,25 +7,25 @@
     height: 70px;
 }
 
-.logo img {
+.logo-h img {
     width: 178;
     height: 90px;
     margin: 0 0 0 10px;
 }
 
-.texto h1 {
+.texto-h  {
     color: var(--color-text);
-    font-size: 20px;
+    font-size: 9px;
     letter-spacing: 0.3px;
     gap: 20px;
 }
 
-.perfil img {
+.perfil-h img {
     margin-top: 2%;
     margin-left: 18%;
     width: 45px;
     height: 45px;
 }
-.direita {
+.direita-h {
     display: flex;
 }

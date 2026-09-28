@@ -1,4 +1,4 @@
-﻿/* container geral da galeria, deixa a foto principal e as miniaturas lado a lado */
+/* container geral da galeria, deixa a foto principal e as miniaturas lado a lado */
 .media-gallery {
     display: flex;
     align-items: center;
